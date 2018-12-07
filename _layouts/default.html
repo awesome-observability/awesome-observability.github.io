@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {% comment %}
+    =======================
+    The purpose of this snippet is to list all the tags you have in your site.
+    =======================
+    {% endcomment %}
+    {% for tag in tags %}
+      <a href="#{{ tag | slugify }}"> {{ tag }} </a>
+    {% endfor %}
+
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

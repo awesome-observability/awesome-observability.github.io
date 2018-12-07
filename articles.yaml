@@ -1,11 +1,55 @@
+# This is the source of truth for the README.md and GitHub pages website.
+#
+# We have some basic metadata, and then the actual data. I think it'd be
+# awesome to have a list of kinds of links and allowed tags. We can allow
+# other tags, but warn on them while generating the website and README.
+#
+# We should also probably talk a bit about some subjective stuff, like the
+# difference between monitoring and observability, and why they matter:
+# - monitoring vs observability
+# - the three pillars?
+# - how does APM fit in the picture?
+
+title: Awesome Observability
+
+description: "[Awesome](https://github.com/sindresorhus/awesome) list of things relating to monitoring and observability."
+
+kinds:
+- conference
+- talk
+- paper
+- product
+- person
+- project
+
+tags:
+- monitoring
+- alerting
+- observability
+- distributed tracing
+
 people: []
 
 links:
+- url: https://zipkin.io/
+  title: "OpenZipkin · A distributed tracing system"
+- url: http://opentracing.io/
+  title: 'opentracing.io'
+- url: https://www.jaegertracing.io/
+  title: 'Jaeger: open source, end-to-end distributed tracing'
+- url: https://opencensus.io/
+  title: OpenCensus
 - url: https://www.honeycomb.io/
   title: Honeycomb | Observability
   description: Honeycomb is the most powerful observability tool on the market for
     visualizing, understanding, and debugging distributed software.
+  kind: product
+  tags:
+  - distributed tracing
 - url: https://lightstep.com/
   title: Monitor What Matters Most and Diagnose Anomalies - LightStep [x]PM
   description: LightStep [x]PM is APM reinvented. Monitor what matters most. Diagnose
     anomalies in seconds across all components of today’s software applications.
+  kind: product
+  tags:
+  - distributed tracing
