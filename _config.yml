@@ -25,6 +25,7 @@ github_username:  zoidbergwill
 # Build settings
 markdown: kramdown
 theme: minima
+google_analytics: 'UA-130590976-1'
 font-awesome:
   assets: true
 plugins:
